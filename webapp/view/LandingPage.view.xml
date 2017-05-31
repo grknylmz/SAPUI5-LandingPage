@@ -1,0 +1,17 @@
+<mvc:View controllerName="ZLANDING.controller.LandingPage" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<Toolbar>
+		<Label text="Bülten Üyeliği" class="topBar"/>
+	</Toolbar>
+	<Toolbar class="sapUiMediumMarginTop" id="toolbar1">
+		<Label text="Mail Adresi:" textAlign="Center" class="classMail"/>
+		<ToolbarSpacer/>
+		<Input id="input" class="mailInput"/>
+	</Toolbar>
+	<l:HorizontalLayout class="sapUiSraLoginButtonBlock">
+		<Button text="Gönder" press="onPress" class="sapMBtnContent sapMLabelBold sapUiSraDisplayBeforeLogin"/>
+	</l:HorizontalLayout>
+	<l:HorizontalLayout>
+		<CheckBox id="checkbox" text="Mail İstiyorum" selected="true"/>
+	</l:HorizontalLayout>
+</mvc:View>
